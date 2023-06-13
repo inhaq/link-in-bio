@@ -1,0 +1,53 @@
+[{
+  "userName": "inzi",
+  "userImg": "https://avatars.githubusercontent.com/u/27832433?v=4",
+  "socials": {
+    "twitter": "https://twitter.com/inzi",
+    "linkedin": "https://linkedin.com/in/inzi",
+    "github": "https://github.com"
+  },
+  "bgImg": "linear(red.100 0%, orange.100 25%, yellow.100 50%)",
+  "leaf": [
+    {
+      "title": "My Website",
+      "url": "https://inzi.me",
+      "img": "https://inzi.me/favicon.ico"
+    },
+    {
+      "title": "My Blog",
+      "url": "https://blog.inzi.me",
+      "img": "https://blog.inzi.me/favicon.ico"
+    },
+    {
+      "title": "My Portfolio",
+      "url": "https://portfolio.inzi.me"
+    }
+  ]
+},
+  {
+    "userName": "tibo",
+    "userImg": "Website",
+    "socials": {
+      "twitter": "https://twitter.com/tibo",
+      "linkedin": "https://linkedin.com/in/tibo",
+      "github": "https://github.com"
+    },
+    "bgImg": "linear-gradient(rgb(255, 206, 3), rgb(255, 92, 23));",
+    "leaf": [
+      {
+        "title": "My Website",
+        "url": "https://tibo.me",
+        "img": "https://tibo.me/favicon.ico"
+      },
+      {
+        "title": "My Blog",
+        "url": "https://blog.tibo.me",
+        "img": "https://blog.tibo.me/favicon.ico"
+      },
+      {
+        "title": "My Portfolio",
+        "url": "https://portfolio.tibo.me"
+      }
+    ]
+  }
+]
