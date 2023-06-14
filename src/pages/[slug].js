@@ -25,7 +25,10 @@ export default function Page({userData}) {
 }
 
 export async function getStaticPaths() {
-    const response = await fetch('http://localhost:3000/api/data');
+    const apiUrl = process.env.NODE_ENV === 'production'
+        ? '/api/data'
+        : 'http://localhost:3000/api/data';
+    const response = await fetch(  `${apiUrl}`);
     let links = await response.json();
     links = JSON.parse(links);
     const paths = links.map((link) => ({
@@ -39,8 +42,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-    const response = await fetch(`http://localhost:3000/api/data`);
-
+    const apiUrl = process.env.NODE_ENV === 'production'
+        ? '/api/data'
+        : 'http://localhost:3000/api/data';
+    const response = await fetch(  `${apiUrl}`);
     let links = await response.json();
     links = JSON.parse(links);
     const userData = links.find((link) => link.userName == params.slug);
