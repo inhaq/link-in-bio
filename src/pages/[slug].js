@@ -26,11 +26,11 @@ export default function Page({userData}) {
 
 export async function getStaticPaths() {
     const apiUrl = process.env.NODE_ENV === 'production'
-        ? '/api/data'
-        : 'http://localhost:3000/api/data';
+        ? process.env.NEXT_PUBLIC_API_URL_PROD
+        : process.env.NEXT_PUBLIC_API_URL_DEV;
     const response = await fetch(  `${apiUrl}`);
     let links = await response.json();
-    links = JSON.parse(links);
+    links = process.env.NODE_ENV === 'development' ? JSON.parse(links): links;
     const paths = links.map((link) => ({
         params: {slug: link.userName},
     }));
@@ -43,11 +43,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
     const apiUrl = process.env.NODE_ENV === 'production'
-        ? '/api/data'
-        : 'http://localhost:3000/api/data';
+        ? process.env.NEXT_PUBLIC_API_URL_PROD
+        : process.env.NEXT_PUBLIC_API_URL_DEV;
     const response = await fetch(  `${apiUrl}`);
     let links = await response.json();
-    links = JSON.parse(links);
+    links = process.env.NODE_ENV === 'development' ? JSON.parse(links): links;
     const userData = links.find((link) => link.userName == params.slug);
     return {
         props: {
