@@ -9,7 +9,7 @@
   "bgImg": "linear(red.100 0%, orange.100 25%, yellow.100 50%)",
   "leaf": [
     {
-      "title": "My Website",
+      "title": "SOMETHING IN THE WATER 2023 on YouTube",
       "url": "https://inzi.me",
       "img": "https://inzi.me/favicon.ico"
     },
@@ -36,6 +36,33 @@
     "leaf": [
       {
         "title": "My Website",
+        "url": "https://tibo.me",
+        "img": "https://tibo.me/favicon.ico"
+      },
+      {
+        "title": "My Blog",
+        "url": "https://blog.tibo.me",
+        "img": "https://blog.tibo.me/favicon.ico"
+      },
+      {
+        "title": "My Portfolio",
+        "url": "https://portfolio.tibo.me"
+      }
+    ]
+  }
+,
+  {
+    "userName": "tyo",
+    "userImg": "Website",
+    "socials": {
+      "twitter": "https://twitter.com/tibo",
+      "linkedin": "https://linkedin.com/in/tibo",
+      "github": "https://github.com"
+    },
+    "bgImg": "linear-gradient(rgb(255, 206, 3), rgb(255, 92, 23));",
+    "leaf": [
+      {
+        "title": "My Site",
         "url": "https://tibo.me",
         "img": "https://tibo.me/favicon.ico"
       },

@@ -11,9 +11,9 @@ export default function Page({ userData }) {
 
     return (
         <Flex h={"100%"} minH={"100vh"} justify={"center"} bgGradient={userData.bgImg}>
-            <Box width={"500px"} >
+            <Box>
                 <Flex maxW={"600px"} justify={"center"} m={"0 auto"}>
-                    <Box w={"500px"}>
+                    <Box>
                         <ShareTree />
                         <UserProfile userData={userData} />
                         <Socials userData={userData} />
